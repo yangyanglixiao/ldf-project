@@ -1,0 +1,43 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.7.RELEASE</version>
+	</parent>
+	<groupId>org.loushang</groupId>
+	<artifactId>ldf-starter-parent</artifactId>
+	<version>0.2.0</version>
+	<packaging>pom</packaging>
+	<name>ldf-starter-parent</name>
+	<description>ldf starter parent</description>
+	<organization>
+		<name>Inspur</name>
+	</organization>
+
+	<properties>
+		<main.basedir>${basedir}/../..</main.basedir>
+		<ldf.version>0.2.0</ldf.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.loushang</groupId>
+				<artifactId>ldf-starter-web</artifactId>
+				<version>${ldf.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.loushang</groupId>
+				<artifactId>ldf-starter-jdbc</artifactId>
+				<version>${ldf.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+</project>
