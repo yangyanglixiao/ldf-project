@@ -10,15 +10,15 @@ import org.loushang.framework.mybatis.mapper.provider.EntityDeleteProvider;
  *            不能为空
  * @author 框架产品组
  */
-public interface DeleteMapper<T> {
+public interface DeleteByEntityMapper<T> {
 
 	/**
-	 * 根据主键字段进行删除，方法参数必须包含完整的主键属性
+	 * 根据实体属性作为条件进行删除，查询条件使用等号
 	 *
-	 * @param key
+	 * @param record
 	 * @return
 	 */
 	@DeleteProvider(type = EntityDeleteProvider.class, method = "dynamicSQL")
-	int delete(Object key);
+	int deleteByEntity(T record);
 
 }
