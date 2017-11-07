@@ -1,9 +1,9 @@
-package org.loushang.ldf.mybatis.mapper.api;
+package org.loushang.framework.mybatis.mapper.api;
 
 import java.util.List;
 
 import org.apache.ibatis.annotations.SelectProvider;
-import org.loushang.ldf.mybatis.mapper.provider.EntityGetProvider;
+import org.loushang.framework.mybatis.mapper.provider.EntityGetProvider;
 
 /**
  * 通用Mapper接口,查询

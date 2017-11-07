@@ -1,4 +1,4 @@
-package org.loushang.ldf.mybatis.util;
+package org.loushang.framework.mybatis.util;
 
 import java.sql.SQLException;
 

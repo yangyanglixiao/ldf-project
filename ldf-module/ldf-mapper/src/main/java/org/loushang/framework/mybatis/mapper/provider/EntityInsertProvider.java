@@ -1,4 +1,4 @@
-package org.loushang.ldf.mybatis.mapper.provider;
+package org.loushang.framework.mybatis.mapper.provider;
 
 import org.apache.ibatis.mapping.MappedStatement;
 import tk.mybatis.mapper.MapperException;

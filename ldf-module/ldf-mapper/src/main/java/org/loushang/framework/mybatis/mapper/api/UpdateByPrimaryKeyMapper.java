@@ -1,8 +1,8 @@
-package org.loushang.ldf.mybatis.mapper.api;
+package org.loushang.framework.mybatis.mapper.api;
 
 import org.apache.ibatis.annotations.Options;
 import org.apache.ibatis.annotations.UpdateProvider;
-import org.loushang.ldf.mybatis.mapper.provider.EntityUpdateProvider;
+import org.loushang.framework.mybatis.mapper.provider.EntityUpdateProvider;
 
 /**
  * 通用Mapper接口,更新

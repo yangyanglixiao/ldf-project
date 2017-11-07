@@ -1,10 +1,10 @@
-package org.loushang.ldf.mybatis.mapper.api;
+package org.loushang.framework.mybatis.mapper.api;
 
 import java.util.List;
 
 import org.apache.ibatis.annotations.InsertProvider;
 import org.apache.ibatis.annotations.Options;
-import org.loushang.ldf.mybatis.mapper.provider.BatchProvider;
+import org.loushang.framework.mybatis.mapper.provider.BatchProvider;
 
 /**
  * 通用Mapper接口,批量插入

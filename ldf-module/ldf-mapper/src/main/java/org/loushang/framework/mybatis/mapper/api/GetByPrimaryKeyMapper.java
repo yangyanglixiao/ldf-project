@@ -1,7 +1,7 @@
-package org.loushang.ldf.mybatis.mapper.api;
+package org.loushang.framework.mybatis.mapper.api;
 
 import org.apache.ibatis.annotations.SelectProvider;
-import org.loushang.ldf.mybatis.mapper.provider.EntityGetProvider;
+import org.loushang.framework.mybatis.mapper.provider.EntityGetProvider;
 
 /**
  * 通用Mapper接口,根据实体主键查询实体

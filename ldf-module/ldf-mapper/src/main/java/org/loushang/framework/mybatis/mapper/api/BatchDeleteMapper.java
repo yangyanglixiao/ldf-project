@@ -1,8 +1,8 @@
-package org.loushang.ldf.mybatis.mapper.api;
+package org.loushang.framework.mybatis.mapper.api;
 
 import org.apache.ibatis.annotations.DeleteProvider;
 import org.apache.ibatis.annotations.Options;
-import org.loushang.ldf.mybatis.mapper.provider.BatchProvider;
+import org.loushang.framework.mybatis.mapper.provider.BatchProvider;
 
 /**
  * 通用Mapper接口,批量删除

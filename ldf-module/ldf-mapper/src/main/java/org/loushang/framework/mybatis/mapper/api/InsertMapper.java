@@ -1,7 +1,7 @@
-package org.loushang.ldf.mybatis.mapper.api;
+package org.loushang.framework.mybatis.mapper.api;
 
 import org.apache.ibatis.annotations.InsertProvider;
-import org.loushang.ldf.mybatis.mapper.provider.EntityInsertProvider;
+import org.loushang.framework.mybatis.mapper.provider.EntityInsertProvider;
 
 /**
  * 通用Mapper接口,插入

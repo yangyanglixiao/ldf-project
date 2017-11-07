@@ -1,7 +1,7 @@
-package org.loushang.ldf.mybatis.mapper.provider;
+package org.loushang.framework.mybatis.mapper.provider;
 
 import org.apache.ibatis.mapping.MappedStatement;
-import org.loushang.ldf.mybatis.util.DBTypeUtil;
+import org.loushang.framework.mybatis.util.DBTypeUtil;
 
 import tk.mybatis.mapper.entity.EntityColumn;
 import tk.mybatis.mapper.entity.EntityTable;
