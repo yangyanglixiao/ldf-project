@@ -85,11 +85,13 @@ public class PageInterceptor implements Interceptor {
 			BoundSql boundSql;
 			//////////////////////////////
 			Map parameters = new HashMap();
-			parameters = (Map) parameter;
-			if (!parameters.isEmpty()) {
-				if ((parameters.get("start") != null && !"".equals(parameters.get("start")))
-						&& (parameters.get("limit") != null && !"".equals(parameters.get("limit")))) {
-					PageHelper.startPage((Integer) parameters.get("start"), (Integer) parameters.get("limit"));
+			if (parameter instanceof Map) {
+				parameters = (Map) parameter;
+				if (!parameters.isEmpty()) {
+					if ((parameters.get("start") != null && !"".equals(parameters.get("start")))
+							&& (parameters.get("limit") != null && !"".equals(parameters.get("limit")))) {
+						PageHelper.startPage((Integer) parameters.get("start"), (Integer) parameters.get("limit"));
+					}
 				}
 			}
 			//////////////////////////////
