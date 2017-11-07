@@ -11,5 +11,6 @@
   <description>ldf module</description>
   <modules>
   	<module>ldf-mapper</module>
+  	<module>ldf-ui</module>
   </modules>
 </project>
