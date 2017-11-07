@@ -10,12 +10,20 @@
 	</properties>
 
 	<dependencies>
-		<!-- 分页插件 -->
+		<!-- 分页插件依赖包 -->
 		<dependency>
-			<groupId>com.github.pagehelper</groupId>
-			<artifactId>pagehelper</artifactId>
-			<version>5.1.2</version>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>19.0</version>
+			<scope>compile</scope>
+			<optional>true</optional>
 		</dependency>
+		<dependency>
+			<groupId>com.github.jsqlparser</groupId>
+			<artifactId>jsqlparser</artifactId>
+			<version>1.0</version>
+		</dependency>
+
 		<!-- 通用Mapper -->
 		<dependency>
 			<groupId>tk.mybatis</groupId>
