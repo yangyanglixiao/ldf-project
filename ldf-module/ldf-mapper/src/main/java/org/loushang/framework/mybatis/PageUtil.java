@@ -1,4 +1,4 @@
-package org.loushang.framework.mybatis.util;
+package org.loushang.framework.mybatis;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;

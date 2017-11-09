@@ -44,7 +44,7 @@ import org.apache.ibatis.plugin.Signature;
 import org.apache.ibatis.session.Configuration;
 import org.apache.ibatis.session.ResultHandler;
 import org.apache.ibatis.session.RowBounds;
-import org.loushang.framework.mybatis.util.PageUtil;
+import org.loushang.framework.mybatis.PageUtil;
 
 import com.github.pagehelper.cache.Cache;
 import com.github.pagehelper.cache.CacheFactory;
