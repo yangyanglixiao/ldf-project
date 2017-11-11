@@ -6,6 +6,10 @@
   <packaging>pom</packaging>
   <name>ldf-project</name>
   <description>ldf project</description>
+  <properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>1.8</java.version>
+  </properties>
   <modules>
   	<module>ldf-starters</module>
   	<module>ldf-starter-parent</module>

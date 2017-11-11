@@ -26,6 +26,19 @@
 			<artifactId>ldf-ui</artifactId>
 			<version>0.2.0</version>
 		</dependency>
+		<!-- ldf-util -->
+		<dependency>
+			<groupId>org.loushang</groupId>
+			<artifactId>ldf-util</artifactId>
+			<version>0.2.0</version>
+		</dependency>
+		<!-- ldf-common -->
+		<dependency>
+			<groupId>org.loushang</groupId>
+			<artifactId>ldf-common</artifactId>
+			<version>0.2.0</version>
+			<type>pom</type>
+		</dependency>
 		<!-- angularjs -->
 		<dependency>
 			<groupId>org.webjars</groupId>
