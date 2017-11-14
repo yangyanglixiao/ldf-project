@@ -90,7 +90,7 @@ public class PageInterceptor implements Interceptor {
 				if (!parameters.isEmpty()) {
 					if ((parameters.get("start") != null && !"".equals(parameters.get("start")))
 							&& (parameters.get("limit") != null && !"".equals(parameters.get("limit")))) {
-						PageHelper.startPage((Integer) parameters.get("start"), (Integer) parameters.get("limit"));
+						PageHelper.startPage(((Integer) parameters.get("start")/(Integer) parameters.get("limit"))+1, (Integer) parameters.get("limit"));
 					}
 				}
 			}
