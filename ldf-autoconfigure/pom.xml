@@ -11,5 +11,6 @@
   <description>ldf autoconfigure</description>
   <modules>
   	<module>ldf-auto-mapper</module>
+  	<module>ldf-auto-exception</module>
   </modules>
 </project>
