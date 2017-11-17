@@ -23,18 +23,4 @@
 		<module>ldf-autoconfigure</module>
 	</modules>
 
-	<distributionManagement>
-		<snapshotRepository>
-			<id>snapshots</id>
-			<name>Porject Snapshot</name>
-			<url>http://10.110.13.14:8081/nexus/content/repositories/snapshots/</url>
-			<uniqueVersion>true</uniqueVersion>
-		</snapshotRepository>
-		<repository>
-			<id>releases</id>
-			<name>Porject Release</name>
-			<url>http://10.110.13.14:8081/nexus/content/repositories/releases/</url>
-		</repository>
-	</distributionManagement>
-
 </project>
