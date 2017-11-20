@@ -16,7 +16,7 @@ public class ExceptionAutoConfiguration {
 	public BusinessExceptionResolver businessExceptionResolver() {
 		BusinessExceptionResolver businessExceptionResolver = new BusinessExceptionResolver();
 		Properties properties = new Properties();
-		properties.setProperty("com.inspur.bigdata.analysis.exception.BusinessException", "public/errorpage");
+		properties.setProperty("org.loushang.framework.exception.BusinessException", "public/errorpage");
 		properties.setProperty("java.lang.Exception", "public/500");
 		properties.setProperty("java.lang.Throwable", "public/500");
 		businessExceptionResolver.setExceptionMappings(properties);
