@@ -2,24 +2,24 @@ package org.loushang.ldf.autoconfigure;
 
 import java.util.Properties;
 
-import org.loushang.framework.exception.BusinessExceptionResolver;
+import org.loushang.framework.exception.DefaultExceptionResolver;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ConditionalOnClass(BusinessExceptionResolver.class)
+@ConditionalOnClass(DefaultExceptionResolver.class)
 public class ExceptionAutoConfiguration {
 	@Bean
-	@ConditionalOnMissingBean(BusinessExceptionResolver.class)
-	public BusinessExceptionResolver businessExceptionResolver() {
-		BusinessExceptionResolver businessExceptionResolver = new BusinessExceptionResolver();
+	@ConditionalOnMissingBean(DefaultExceptionResolver.class)
+	public DefaultExceptionResolver businessExceptionResolver() {
+		DefaultExceptionResolver defaultExceptionResolver = new DefaultExceptionResolver();
 		Properties properties = new Properties();
-		properties.setProperty("org.loushang.framework.exception.BusinessException", "public/errorpage");
-		properties.setProperty("java.lang.Exception", "public/500");
-		properties.setProperty("java.lang.Throwable", "public/500");
-		businessExceptionResolver.setExceptionMappings(properties);
-		return businessExceptionResolver;
+		properties.setProperty("org.loushang.framework.exception.BusinessException", "default/errorpage");
+		properties.setProperty("java.lang.Exception", "default/500");
+		properties.setProperty("java.lang.Throwable", "default/500");
+		defaultExceptionResolver.setExceptionMappings(properties);
+		return defaultExceptionResolver;
 	}
 }
