@@ -14,5 +14,6 @@
   	<module>ldf-ui</module>
   	<module>ldf-util</module>
   	<module>ldf-common</module>
+  	<module>ldf-adaptor</module>
   </modules>
 </project>
