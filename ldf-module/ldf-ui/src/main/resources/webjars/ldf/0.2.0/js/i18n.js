@@ -174,6 +174,6 @@ L.getLocaleMessage = function(code, message) {
     // scriptUrl: 配置JS语言包的加载路径
     L.i18n.loadLanguages({
         locale: $.cookie('lsLocale'),
-        scriptUrl: L.i18n.getContextPath() + "/skins/js/i18n"
+        scriptUrl: L.i18n.getContextPath() + "/service/webjars/ldf/js/i18n"
     });
 })(jQuery);
