@@ -17,5 +17,6 @@
   	<module>ldf-common</module>
   	<module>ldf-adaptor</module>
     <module>ldf-i18n</module>
+    <module>ldf-keycloak-adapter</module>
   </modules>
 </project>
