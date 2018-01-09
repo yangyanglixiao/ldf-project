@@ -5,11 +5,11 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 
 @ConfigurationProperties(prefix = "cors")
 public class CorsFilterProperties {
-    private String allowOrigin;
-    private String allowMethods;
-    private String allowCredentials;
-    private String allowHeaders;
-    private String exposeHeaders;
+    private String allowOrigin = "*";
+    private String allowMethods = "";
+    private String allowCredentials = "";
+    private String allowHeaders = "";
+    private String exposeHeaders = "";
 
     public String getAllowOrigin() {
         return allowOrigin;
