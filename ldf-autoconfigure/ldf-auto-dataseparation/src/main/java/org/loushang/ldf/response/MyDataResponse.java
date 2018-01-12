@@ -7,7 +7,7 @@ package org.loushang.ldf.response;
  * 中包含两部分：元数据与返回值，其中，元数据表示操作是否成功与返回值消息等，返回值对应服务端方法所返回的数据。
  * { "meta": { "success": true, "message": "ok" }, "data": ... }
  */
-public class Response {
+public class MyDataResponse {
 
 	private static final String OK = "ok";
 	private static final String ERROR = "error";
@@ -15,24 +15,24 @@ public class Response {
 	private Meta meta;     // 元数据
 	private Object data;   // 响应内容
 
-	public Response success() {
+	public MyDataResponse success() {
 		this.meta = new Meta(true, OK);
 		return this;
 	}
 
-	public Response success(Object data) {
+	public MyDataResponse success(Object data) {
 		this.meta = new Meta(true, OK);
 		this.data = data;
 		return this;
 	}
 
-	public Response failure() {
+	public MyDataResponse failure() {
 		this.meta = new Meta(false, ERROR);
 		return this;
 	}
 
-	public Response failure(String message) {
-		this.meta = new Meta(false, message);
+	public MyDataResponse failure(String message, String exception) {
+		this.meta = new Meta(false, message,exception);
 		return this;
 	}
 
@@ -51,6 +51,7 @@ public class Response {
 
 		private boolean success;
 		private String message;
+		private String exception;
 
 		public Meta(boolean success) {
 			this.success = success;
@@ -61,12 +62,22 @@ public class Response {
 			this.message = message;
 		}
 
+		public Meta(boolean success, String message, String exception) {
+			this.success = success;
+			this.message = message;
+			this.exception = exception;
+		}
+
 		public boolean isSuccess() {
 			return success;
 		}
 
 		public String getMessage() {
 			return message;
+		}
+
+		public String getException() {
+			return exception;
 		}
 	}
 }
