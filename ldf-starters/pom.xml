@@ -15,6 +15,7 @@
 	<modules>
 		<module>ldf-starter-web</module>
 		<module>ldf-starter-jdbc</module>
+		<module>ldf-starter-dataseparation</module>
 	</modules>
 
 
