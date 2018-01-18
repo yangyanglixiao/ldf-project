@@ -1,16 +1,19 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>org.loushang</groupId>
-    <artifactId>ldf-project</artifactId>
-    <version>0.2.0</version>
-  </parent>
-  <artifactId>ldf-autoconfigure</artifactId>
-  <packaging>pom</packaging>
-  <name>ldf-autoconfigure</name>
-  <description>ldf autoconfigure</description>
-  <modules>
-  	<module>ldf-auto-mapper</module>
-  	<module>ldf-auto-exception</module>
-  </modules>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.loushang</groupId>
+        <artifactId>ldf-project</artifactId>
+        <version>0.2.0</version>
+    </parent>
+    <artifactId>ldf-autoconfigure</artifactId>
+    <packaging>pom</packaging>
+    <name>ldf-autoconfigure</name>
+    <description>ldf autoconfigure</description>
+    <modules>
+        <module>ldf-auto-mapper</module>
+        <module>ldf-auto-exception</module>
+        <module>ldf-auto-dataseparation</module>
+        <module>ldf-auto-service-tracking</module>
+    </modules>
 </project>
