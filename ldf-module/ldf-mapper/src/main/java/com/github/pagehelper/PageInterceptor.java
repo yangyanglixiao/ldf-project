@@ -44,7 +44,7 @@ import org.apache.ibatis.plugin.Signature;
 import org.apache.ibatis.session.Configuration;
 import org.apache.ibatis.session.ResultHandler;
 import org.apache.ibatis.session.RowBounds;
-import org.loushang.framework.mybatis.util.PageUtil;
+import org.loushang.framework.mybatis.PageUtil;
 
 import com.github.pagehelper.cache.Cache;
 import com.github.pagehelper.cache.CacheFactory;
@@ -85,11 +85,13 @@ public class PageInterceptor implements Interceptor {
 			BoundSql boundSql;
 			//////////////////////////////
 			Map parameters = new HashMap();
-			parameters = (Map) parameter;
-			if (!parameters.isEmpty()) {
-				if ((parameters.get("start") != null && !"".equals(parameters.get("start")))
-						&& (parameters.get("limit") != null && !"".equals(parameters.get("limit")))) {
-					PageHelper.startPage((Integer) parameters.get("start"), (Integer) parameters.get("limit"));
+			if (parameter instanceof Map) {
+				parameters = (Map) parameter;
+				if (!parameters.isEmpty()) {
+					if ((parameters.get("start") != null && !"".equals(parameters.get("start")))
+							&& (parameters.get("limit") != null && !"".equals(parameters.get("limit")))) {
+						PageHelper.startPage(((Integer) parameters.get("start")/(Integer) parameters.get("limit"))+1, (Integer) parameters.get("limit"));
+					}
 				}
 			}
 			//////////////////////////////
